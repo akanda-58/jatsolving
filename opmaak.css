@@ -1,0 +1,189 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+
+/*body*/
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*navbar*/
+
+.logo {
+    width: 50px;
+    height: auto;
+
+}
+
+nav {
+    backdrop-filter: blur(15px);
+    padding-block: 15px;
+    background: #6E40C9;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 35px;
+}
+
+
+nav .content ul {
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+}
+
+nav .content .fa-bars {
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+.mobile-menu {
+    position: absolute;
+    background-color: rgba(11, 11, 11, 0.95);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.mobile-menu .mobile-items {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu .fa-x {
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+    right: -10rem;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.mobile-routes li {
+    margin-top: 5vh;
+}
+
+.mobile-routes li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.mobile-routes li .current {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    
+
+    
+
+    
+
+    .mobile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding-block: 10px;
+        border-bottom: 0.1px solid white;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Your existing CSS rules */
+
+@media screen and (max-width: 800px) {
+   
+
+   
+    
+
+    .mobile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding-block: 10px;
+        border-bottom: 0.1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* middle */
+
+.card{
+    width: 50%;
+    margin: 250px auto 0 ;
+}
+
+.purple{
+color: #6E40C9;
+margin-bottom: 20px;
+}
+
+
+
+
+
