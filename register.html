@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="opmaak.css">
   <link rel="icon" href="./afbeeldingen/logojaardinges.png" type="image/x-icon" />
+  <script src="javascript.js"></script>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,17 +31,16 @@
   </nav>
 
 
-
   <div class="card">
     <article class="card-body">
-      <h6 class="purple">JaT Solutions</h6>
-      <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>-->
-      <h4 class="card-title" style="margin-bottom: 0;">Login</h4>
-      <h8 class="text-muted">Welcome back. Enter your credentials to acces your account</h8>
+      <b class="purple"> JaT Solutions</b>
+
+      <h4 class="card-title" style="margin-bottom: 0;">Register</h4>
+      <h8 class="text-muted">Welcome! Choose your credentials to create your account</h8>
 
 
       <hr>
-      <form>
+      <form  action="home.html" method="GET">
         <h8 class="inlog-tag">Email Adress</h8>
         <div class="form-group">
           <input name="" class="form-control" placeholder="hello@example.com" type="email">
@@ -46,36 +48,48 @@
         <br>
         <h8 class="inlog-tag">Password</h8>
         <div class="form-group">
-          <input class="form-control" placeholder="******" type="password">
+          <div class="password-input-wrapper">
+            <input class="form-control" id="password-input" placeholder="******" type="password">
+            <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+              <i class="fas fa-eye"></i>
+            </span>
+          </div>
         </div>
         <br>
-        
-        <div style="display: flex; justify-content: space-between;width: 100%;">
+
+
+
+        <div class="loginoptions">
           <label>
             <input type="checkbox" name="business" />
             Keep me signed in
           </label>
-          <div class="col-md-3 text-right">
-            <a class="small" href="#">Forgot password?</a>
-          </div>
         </div>
-        
-       
-        
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <button style="width: 100%;" type="submit" class="btn btn-primary btn-block"> Continue </button>
-            </div> <!-- form-group// -->
+
+
+
+        <a href="./home.html">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Continue </button>
+              </div>
+            </div>
           </div>
-          
-        </div> <!-- .row// -->
+        </a>
+
       </form>
+
+      <p class="sign-up"><span>or login with</span>
       <p>
-        <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-        <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+
+      <p class="otherinlogs">
+        <a href="./home.html" class="btn btn-block btn-outline-info"> <i class="fab fa-google"></i>   Login via Google</a>
+        <a href="./home.html" class="btn btn-block btn-outline-primary"> <i class="fa-brands fa-facebook-f"></i>   Login via
+          facebook</a>
       </p>
+      <a href="./login.html" class="purple-signup"> Already have an account?<b> Login here</b></a>
     </article>
   </div> <!-- card.// -->
 

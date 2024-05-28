@@ -44,10 +44,7 @@ nav .content ul {
     gap: 4vw;
 }
 
-nav .content .fa-bars {
-    color: white;
-    font-size: 2rem;
-}
+
 
 
 
@@ -108,8 +105,41 @@ nav .content .fa-bars {
     display: none;
 }
 
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+.card{
+    width: 50%;
+    margin: 175px auto 75px auto;
+}
+
 @media screen and (max-width: 800px) {
-    
+    .card{
+        width: 70%;
+        margin: 175px auto 75px auto;
+    }
 
     
 
@@ -129,64 +159,256 @@ nav .content .fa-bars {
         padding-block: 10px;
         border-bottom: 0.1px solid white;
     }
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 15px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* Your existing CSS rules */
-
-@media screen and (max-width: 800px) {
-   
-
-   
-    
-
-    .mobile-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    .card{
+        width: 85%;
+        margin: 175px auto 75px auto;
     }
 }
 
-@media screen and (max-width: 600px) {
-    nav {
-        padding-block: 10px;
-        border-bottom: 0.1px solid rgba(255, 255, 255, 0.15);
-    }
-}
-
-/* middle */
-
-.card{
-    width: 50%;
-    margin: 250px auto 0 ;
-}
+.card-title{    
+    margin-top: 20px;
+}   
 
 .purple{
-color: #6E40C9;
-margin-bottom: 20px;
+    color: #6E40C9;
+    
+
+}
+
+.purple-signup{
+    color: #6E40C9;
+    text-decoration: none;
+    display: block; 
+    width: fit-content; 
+    margin: 30px auto;
+   
 }
 
 .inlog-tag{
     font-weight: bold;
     font-size: small;
 }
+
+.row{
+    margin-top: 25px;
+}
+
+.otherinlogs{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.loginoptions{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sign-up {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 45px 0 20px; 
+ } 
+ 
+p span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    background-color: #6E40C9 !important;
+}
+
+.small{
+    color: #6E40C9 !important;
+}
+
+
+.btn {
+    flex: 1; 
+    text-align: center; 
+    margin: 0 10px; 
+}
+
+.btn i {
+    margin-right: 5px; 
+}
+
+.btn-report-mobile {
+    width: 100%;
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh; 
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+
+
+
+.home-navigation-mobile {
+    display: flex; 
+    width: 65%;
+    margin: 175px auto 75px auto;
+    height: 50vh; 
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 
+                0px 8px 10px rgba(0, 0, 0, 0.1), 
+                0px 16px 24px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px; 
+    padding: 20px; 
+}
+
+.home-navigation-mobile p {
+    text-decoration: underline;
+}
+
+
+.profile-mobile {
+    height: 4vh;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+
+.home-menu-left-mobile {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.home-menu-right-mobile{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    flex: 1; 
+    padding-top: 30%; 
+    padding-bottom: 30%;
+    box-sizing: border-box;
+}
+
+.home-menu-left-mobile i, .home-menu-right-mobile i {
+   font-size: 30px;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 767px) {
+    .home-navigation-mobile {
+        display: none;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    border-right: 1px solid rgb(172, 172, 172);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 60% 0;
+    box-sizing: border-box;
+    margin-top: 100px;
+
+}
+
+.btn-report {
+    width: 80%;
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh; 
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+
+.graphs {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr; 
+    grid-template-rows: 1.2fr 1fr;    
+    gap: 30px; 
+    height: 80vh; 
+    width: 80vw;  
+    box-sizing: border-box;
+    margin-left: 14vw;
+    margin-top: 120px;
+}
+
+.upper-left, .upper-right, .bottom-left, .bottom-right {
+    width: 100%;
+    height: 100%;
+}
+
+.upper-left {
+    background-color: red;
+}
+
+.upper-right {
+    background-color: red;
+}
+
+.bottom-left {
+    background-color: blue;
+}
+
+.bottom-right {
+    background-color: yellow;
+}
+  
+
+@media only screen and (max-width: 767px) {
+    .sidenav {
+        display: none;
+    }
+    .graphs {
+        display: none;
+    }
+}
+  
+
+  
 
 
 
