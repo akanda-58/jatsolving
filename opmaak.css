@@ -11,6 +11,15 @@ body {
 }
 
 
+h1{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.center{
+    text-align: center;
+}
+
 
 /*navbar*/
 
@@ -115,13 +124,31 @@ nav .content ul {
 
 
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: #6E40C9  ;
     border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+textarea{
+    
+    width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+
+  
+}
+
+
+
 
 
 
@@ -133,7 +160,13 @@ nav .content ul {
 .card{
     width: 50%;
     margin: 175px auto 75px auto;
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 
+                0px 8px 10px rgba(0, 0, 0, 0.1), 
+                0px 16px 24px rgba(0, 0, 0, 0.1); 
 }
+
+
 
 @media screen and (max-width: 800px) {
     .card{
@@ -230,9 +263,10 @@ p span {
     cursor: pointer;
 }
 
-button{
+.btn{
     width: 100%;
     background-color: #6E40C9 !important;
+    color: white;
 }
 
 .small{
@@ -260,6 +294,7 @@ button{
     line-height: 4vh; 
     display: inline-block;
     box-sizing: border-box;
+    background-color: #6E40C9 !important;
     
 }
 
@@ -361,6 +396,7 @@ p{
     line-height: 4vh; 
     display: inline-block;
     box-sizing: border-box;
+    background-color: #6E40C9 !important;
     
 }
 
@@ -396,6 +432,55 @@ p{
 .bottom-right {
     background-color: yellow;
 }
+
+.report-title{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.go-back{
+    background-color: white;
+    border: 0.1px solid rgb(175, 175, 175);
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.green{
+    
+    border: 0.3px solid green;
+    margin-top: 0;
+
+}
+
+
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .color-box {
+    box-shadow: 0 0 0 1px #000;
+}
+
+.color{
+    color: rgb(138, 138, 138); 
+    margin-right: 10px;
+}
+
+
   
 
 @media only screen and (max-width: 767px) {
@@ -406,6 +491,13 @@ p{
         display: none;
     }
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
   
 
   
