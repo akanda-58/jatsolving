@@ -2,7 +2,7 @@
 <html lang="NL-be">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="jatsolvings, goedkoop je problemen oplossen">
     <meta name="keywords" content="jatsolvings, goedkoop, problemen oplossen, goedkope oplossingen, probleemoplossing">
@@ -35,52 +35,61 @@
 </head>
 
 <body>
-    <nav>
-        
-            <a href="/"><img src="./afbeeldingen/logojaardinges.png" alt="logo" class="logo"></a>
-        
-    </nav>
-
-    <div class="home-navigation-mobile">
-        <div class="home-menu-left-mobile">
-            <button class="btn-primary btn-block btn-report-mobile"><a href="createproblem.html">+ Report</a></button>
-            <p>Menu</p>
-            <a href="charts.html"><i class="fa-solid fa-chart-pie"></i></a>
-            <a href="problems.html"><i class="fa-solid fa-file-lines"></i></a>
-            <i class="fa-solid fa-users"></i>
-        </div>
-        <div class="home-menu-right-mobile">
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-gear"></i>
-            <p>Profile</p>
-            <img src="./afbeeldingen/Generic-Profile-Image.png" alt="Profile Image" class="profile-mobile">
-        </div>
+  <nav>
+    <div class="content">
+      <a href="/"><img src="./afbeeldingen/logojaardinges.png" alt="logo" class="logo"></a>
     </div>
+  </nav>
 
-    <div class="sidenav">
-        <div class="home-menu">
-            <button class="btn-primary btn-block btn-report"><a href="createproblem.html">+ Report</a></button>
-            <p>Menu</p>
-            <a href="home.html"><i class="fa-solid fa-chart-pie"></i></a>
-            <a href="problems.html"><i class="fa-solid fa-file-lines"></i></a>
-            <i class="fa-solid fa-users"></i>
+  <div class="card">
+    <article class="card-body">
+      <b class="purple"> JaT Solutions</b>
 
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-gear"></i>
-            <p>Profile</p>
-            <img src="./afbeeldingen/Generic-Profile-Image.png" alt="Profile Image" class="profile-mobile">
+      <h4 class="card-title" style="margin-bottom: 0;">Register</h4>
+      <h8 class="text-muted">Welcome. Chose your credentials to create your account</h8>
+
+      <hr>
+      <form id="loginForm" action="javascript:void(0);" method="POST">
+        <h8 class="inlog-tag">Email Address</h8>
+        <div class="form-group">
+          <input name="email" class="form-control" placeholder="hello@example.com" type="email">
         </div>
-    </div>
+        <br>
+        <h8 class="inlog-tag">Password</h8>
+        <div class="form-group">
+          <div class="password-input-wrapper">
+            <input name="password" class="form-control" id="password-input" placeholder="******" type="password">
+            <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+              <i class="fas fa-eye"></i>
+            </span>
+          </div>
+        </div>
+        <br>
+      
+        <div class="loginoptions">
+          <label>
+            <input type="checkbox" name="keep_signed_in" />
+            Keep me signed in
+          </label>
+        </div>
+      
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block"> Continue </button>
+            </div>
+          </div>
+        </div>
+      </form>
 
-    <div class="graphs">
-        <div class="graph"></div>
-        <div class="graph"></div>
-        <div class="graph"></div>
-        <div class="graph"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+     
+      
+    </article>
+  </div>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 </html>
